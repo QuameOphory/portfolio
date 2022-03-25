@@ -1,6 +1,12 @@
 
 /* Global styles
 ---------------------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
 body {
     color: #343434;
     margin: 0;
@@ -50,6 +56,18 @@ header {
 .projects {
     background: #f7fff7;
 }
+.project-item{
+    overflow: hidden;
+    padding: 25px 0;
+    border-bottom: 1px dashed #343434;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+.project-item img{
+    float: left;
+    margin-right: 20px;
+}
 .projects a {
     color: #2f3061;
 }
@@ -85,8 +103,19 @@ header {
 footer {
     background: #343434;
     color: #ffffff;
+    text-align: center;
 }
 
 footer .content-wrapper ul li a {
     text-decoration: none;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-list li{
+    padding: 10px;
+    display: inline-block;
 }
